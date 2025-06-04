@@ -1,0 +1,714 @@
+{
+	"info": {
+		"_postman_id": "b86f5921-af99-4fcb-aa8b-e3cf346c7698",
+		"name": "library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24747723",
+		"_collection_link": "https://n00000-0331.postman.co/workspace/n-Workspace~c56e0470-5d85-4cf2-8d22-4249f6e33d94/collection/24747723-b86f5921-af99-4fcb-aa8b-e3cf346c7698?action=share&source=collection_link&creator=24747723"
+	},
+	"item": [
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "save Student",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ5MDA3MDMwLCJleHAiOjE3NDkwOTM0MzB9.yw2_UXACuhhzJA3r0yD1Q8-w7Cii_fMLfNqi6BE67ow",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"a1\"\r\n    ,\"email\":\"a1@gmail.com\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/students",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ5MDA3MDMwLCJleHAiOjE3NDkwOTM0MzB9.yw2_UXACuhhzJA3r0yD1Q8-w7Cii_fMLfNqi6BE67ow",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"usman\"\r\n    ,\"email\":\"us@gmail.com\"    \r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/students/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"students",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get All Students",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ4OTcyMjYwLCJleHAiOjE3NDkwNTg2NjB9.wLk8PYACN-wU2cOE7axWLHJw-grhTnEmi2fSBIBqFWA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"usman\"\r\n    ,\"email\":\"us@gmail.com\"    \r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/students",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ5MDA3MDMwLCJleHAiOjE3NDkwOTM0MzB9.yw2_UXACuhhzJA3r0yD1Q8-w7Cii_fMLfNqi6BE67ow",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"usman\"\r\n    ,\"email\":\"us@gmail.com\"    \r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/students/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"students",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Student",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ5MDA3MDMwLCJleHAiOjE3NDkwOTM0MzB9.yw2_UXACuhhzJA3r0yD1Q8-w7Cii_fMLfNqi6BE67ow",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"aqsa1\" \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/students/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"students",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "issue book",
+			"item": [
+				{
+					"name": "issue",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ5MDA3MDMwLCJleHAiOjE3NDkwOTM0MzB9.yw2_UXACuhhzJA3r0yD1Q8-w7Cii_fMLfNqi6BE67ow",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"studentId\":8,\r\n    \"bookId\":5,\r\n    \"issueDate\": \"2025-06-04\",\r\n  \"dueDate\": \"2025-06-09\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/issue",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"issue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all issue books",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ5MDA3MDMwLCJleHAiOjE3NDkwOTM0MzB9.yw2_UXACuhhzJA3r0yD1Q8-w7Cii_fMLfNqi6BE67ow",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/issue",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"issue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update or return",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ5MDA3MDMwLCJleHAiOjE3NDkwOTM0MzB9.yw2_UXACuhhzJA3r0yD1Q8-w7Cii_fMLfNqi6BE67ow",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"returnDate\":\"2025-06-10\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/issue/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"issue",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ5MDA3MDMwLCJleHAiOjE3NDkwOTM0MzB9.yw2_UXACuhhzJA3r0yD1Q8-w7Cii_fMLfNqi6BE67ow",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/issue/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"issue",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ5MDA3MDMwLCJleHAiOjE3NDkwOTM0MzB9.yw2_UXACuhhzJA3r0yD1Q8-w7Cii_fMLfNqi6BE67ow",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \r\n    \"title\":\"The C++ Programming Language\",\r\n    \"author\":\"Bjarne Stroustrup\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/books",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all Books",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ5MDA3MDMwLCJleHAiOjE3NDkwOTM0MzB9.yw2_UXACuhhzJA3r0yD1Q8-w7Cii_fMLfNqi6BE67ow",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/books",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ5MDA3MDMwLCJleHAiOjE3NDkwOTM0MzB9.yw2_UXACuhhzJA3r0yD1Q8-w7Cii_fMLfNqi6BE67ow",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/books/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Book",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ5MDA3MDMwLCJleHAiOjE3NDkwOTM0MzB9.yw2_UXACuhhzJA3r0yD1Q8-w7Cii_fMLfNqi6BE67ow",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"author\":\"james\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/books/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Book by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ5MDA3MDMwLCJleHAiOjE3NDkwOTM0MzB9.yw2_UXACuhhzJA3r0yD1Q8-w7Cii_fMLfNqi6BE67ow",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"English\"   \r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/books/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n   \"email\": \"bilala@gmail.com\",\r\n  \"password\": \"124\"\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						},
+						{
+							"key": "addParamsToHeader",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Sar\",\r\n  \"email\": \"sadd@gmail.com\",\r\n  \"password\": \"123\",\r\n  \"role\":\"ADMIN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiaWxhbDFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ4NDUyNzUzLCJleHAiOjE3NDg1MzkxNTN9.BjV0ZtQmtJbq5cjWRvvAGWJvxM_Mc4JefVjiM6UfjEk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Zain Khan\",\r\n  \"email\": \"Zain@example.com\",\r\n  \"password\": \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ4OTY4OTUyLCJleHAiOjE3NDkwNTUzNTJ9.z4d5PtydEf_rrSSltVlIPsIg7QdiypeMmrMObeHKauQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Uzair Ahmed\",\r\n    \"email\": \"uzair1@gmail.com\",\r\n    \"password\": null,\r\n    \"role\": \"USER\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ4OTY4OTUyLCJleHAiOjE3NDkwNTUzNTJ9.z4d5PtydEf_rrSSltVlIPsIg7QdiypeMmrMObeHKauQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"bilal\",\r\n  \"email\": \"bilala@gmail.com\",\r\n  \"password\": \"124\"\r\n  ,\"role\":\"ADMIN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ4OTcyMjYwLCJleHAiOjE3NDkwNTg2NjB9.wLk8PYACN-wU2cOE7axWLHJw-grhTnEmi2fSBIBqFWA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Zain Khan\",\r\n  \"email\": \"Zain@example.com\",\r\n  \"password\": \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get All User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMTJAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzQ4OTcyMjYwLCJleHAiOjE3NDkwNTg2NjB9.wLk8PYACN-wU2cOE7axWLHJw-grhTnEmi2fSBIBqFWA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Zain Khan\",\r\n  \"email\": \"Zain@example.com\",\r\n  \"password\": \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
